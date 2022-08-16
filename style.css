@@ -30,7 +30,7 @@ body {
 .main {
     flex: 1 1 auto;
     background-color: #9ac8fc;
-    background-image: url(/images/kottans-logo.png);
+    background-image: url(images/kottans-logo.png);
     background-size: cover;
     opacity: 0.09;
     min-width: 100px
