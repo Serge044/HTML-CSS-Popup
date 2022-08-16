@@ -91,7 +91,7 @@ body {
     appearance: none;
     height: 50px;
     width: 50px;
-    background: url(/images/popup-button.png) no-repeat;
+    background: url(images/popup-button.png) no-repeat;
     background-color: rgb(186, 12, 12);
     border-radius: 10px;
     align-content: center;
