@@ -5,6 +5,7 @@
     list-style-type: none;
     text-decoration: none;
     font-size: 15px;
+    font-weight: 900;
     color: black;
 }
 
@@ -22,32 +23,39 @@ body {
 .header {
     display: flex;
     justify-content: flex-end;
+    padding-right: 25px;
     align-items: center;
-    background-color: rgb(36, 36, 36);
+    background-color: black;
     height: 100px;
 }
 
 .main {
     flex: 1 1 auto;
     background-color: #9ac8fc;
-    background-image: url(images/kottans-logo.png);
+    background-image: url(/images/kottans-logo.png);
     background-size: cover;
-    opacity: 0.09;
-    min-width: 100px
+    background-position: 52%;
+    opacity: 0.07;
 }
 
 .footer {
     height: 100px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 50px;
     background-color: black;
 }
 
-.text__footer {
-    color: green;
-    font-size: 50px;
+.blue {
+    color: #cac4ad;
+    font-size: 16px;
+}
+
+.yellow {
+    color: #cac4ad;
+    font-size: 16px;
 }
 
 .ul__items {
@@ -62,13 +70,15 @@ body {
     justify-content: center;
     height: 50px;
     width: 50px;
-    background-color: rgb(186, 12, 12);
+    background-color: #cac4ad;
     border-radius: 10px;
+    border: 2px solid wheat;
+
 }
 
 .main__nav-buttons:hover {
     transition: 0.3s;
-    background-color: red;
+    background-color: rgb(255, 249, 221);
     border-radius: 15px;
 }
 
@@ -81,29 +91,30 @@ body {
     border-radius: 15px;
 }
 
-/* .logo:focus {
+.logo:focus {
     transition: 0.3s;
     border-radius: 15px;
-} */
+}
 
 .popup_btn {
     -webkit-appearance: none;
     appearance: none;
     height: 50px;
     width: 50px;
-    background: url(images/popup-button.png) no-repeat;
-    background-color: rgb(186, 12, 12);
+    background: url(/images/popup-button-black.png) no-repeat;
+    background-position: center;
+    background-color: #cac4ad;
     border-radius: 10px;
-    align-content: center;
-    align-items: center;
-    justify-content: space-around;
     cursor: pointer;
+    border: 2px solid wheat;
 }
 
 .popup_btn:hover {
     transition: 0.3s;
-    background-color: red;
+    background-color: rgb(255, 249, 221);
     border-radius: 15px;
+    background-size: cover;
+
 }
 
 .popup__menu {
@@ -113,15 +124,15 @@ body {
     visibility: hidden;
     border-radius: 10px;
     width: 310px;
-    height: 390px;
+    height: 481px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     overflow-y: auto;
     padding: 10px 12px;
-    background-color: rgba(12, 176, 12, 0.444);
+    background-color: #e9e9e9;
     border: 2px black solid;
-    box-shadow: 0 0 3px black(0, 0, 1, 1);
+    box-shadow: 3px 3px 7px 2px rgba(0, 0, 0, 0.7);
     z-index: 2;
 }
 
@@ -140,7 +151,6 @@ body {
     height: 50px;
 }
 
-
 .popup__menu__item {
     display: flex;
     flex-flow: column wrap;
@@ -149,21 +159,16 @@ body {
     width: 30%;
     text-align: center;
     border-radius: 10px;
+    margin: 10px 0px;
 }
 
 .popup__menu__item:hover {
-    transition: 0.3s;
-    background-color: aqua;
-    border-radius: 10px;
-    border: 3px solid red;
+    transition: 0.1s;
+    background-color: rgba(128, 128, 128, 0.393);
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 85px;
 }
-
-/* .popup__menu__item:focus {
-    transition: 0.3s;
-    background-color: aqua;
-    border-radius: 10px;
-    border: 3px solid red;
-} */
 
 .popup__menu__item__title {
     display: flex;
@@ -175,6 +180,12 @@ body {
 
 .popup_btn:checked~.popup__menu {
     visibility: visible;
+}
+
+.popup_btn:checked {
+    background-color: rgb(255, 249, 221);
+    border-radius: 15px;
+    background-size: cover;
 }
 
 .checkbox_more:checked~.popup__menu__open {
@@ -196,17 +207,21 @@ body {
 
 .more__btn {
     width: 100%;
-    height: 35px;
+    height: 37px;
     padding: 10px;
+    margin: 20px;
     text-align: center;
-    background-color: #e6e6e6;
+    background-color: #cac4ad;
     border-radius: 5px;
     z-index: 2;
+    border: 1px solid black;
+    font-size: 18px;
+    line-height: 16px;
 }
 
 .more__btn:hover {
     cursor: pointer;
-    background-color: #b1b3b4;
+    background-color: rgb(255, 249, 221);
 }
 
 .checkbox_more:focus~.more__btn {
@@ -217,17 +232,13 @@ body {
     text-decoration: underline;
 }
 
-.bell__image:hover {
-    opacity: 0.5;
-}
-
-/* .line {
+.line {
     position: absolute;
     height: 1px;
-    width: 90%;
-    background-color: rgba(198, 198, 198, 0.647);
-    bottom: 70px;
-} */
+    width: 78%;
+    background-color: rgba(128, 128, 128, 0.393);
+    bottom: 63px;
+}
 
 .even_more:hover {
     text-decoration: underline;
