@@ -13,7 +13,7 @@ html,
 body {
     height: 100%;
     width: 100%;
-    min-height: 100%;
+    min-height: 700px;
     min-width: 500px;
 }
 
@@ -254,6 +254,25 @@ body {
     height: 20px;
 }
 
-/* .nav__menu {
+@media screen and (max-width: 640px) {
+    .ul__items {
+        justify-content: center;
+        width: auto;
+    }
+    .main__nav-buttons {
+        margin-right: 10px;
+    }
 
-} */
+    .ring {
+        margin-left: 10px;
+    }
+
+    .popup__menu {
+        right: 25px;
+    }
+
+    html,
+    body {
+    min-width: 360px;
+    }
+}
